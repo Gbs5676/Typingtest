@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <script>
       document.addEventListener("keydown", function (e) {
@@ -49,11 +49,11 @@
     <meta name="image" content="https://monkeytype.com/mtsocial.png" />
     <meta
       name="description"
-      content="A minimalistic, customisable typing website. Test yourself in various modes, track your progress and improve your typing speed."
+      content="Um site de digitação minimalista e personalizável. Teste suas habilidades em vários modos, acompanhe seu progresso e melhore sua velocidade de digitação."
     />
     <meta
       name="keywords"
-      content="typing speed test, typing speedtest, typing test, speetest, speed test, typing, test, typing-test, typing test, monkey-type, monkeytype, monkey type, monkey-types, monkeytypes, monkey types, types, monkey, type, miodec, wpm, words per minute, typing website, minimalistic, custom typing test, customizable, customisable, themes, random words, smooth caret, smooth, new, new typing site, new typing website, minimalist typing website, minimalistic typing website, minimalist typing test"
+      content="teste de velocidade de digitação, teste de velocidade, digitação, teste, teste de digitação, monkey-type, monkeytype, monkey type, monkey-types, monkeytypes, monkey types, types, monkey, type, miodec, ppm, palavras por minuto, site de digitação, minimalista, teste de digitação personalizado, personalizável, temas, palavras aleatórias, cursor suave, novo, novo site de digitação, site de digitação minimalista, teste de digitação minimalista"
     />
     <meta name="author" content="Miodec" />
     <meta property="og:title" content="Monkeytype" />
@@ -61,7 +61,7 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content="A minimalistic, customisable typing website. Test yourself in various modes, track your progress and improve your typing speed."
+      content="Um site de digitação minimalista e personalizável. Teste suas habilidades em vários modos, acompanhe seu progresso e melhore sua velocidade de digitação."
     />
     <meta property="og:image" content="https://monkeytype.com/mtsocial.png" />
     <meta name="theme-color" content="#e2b714" id="metaThemeColor" />
@@ -87,12 +87,12 @@
         display: none;
       "
     >
-      Important information about your account. Please click this message.
+      Informações importantes sobre sua conta. Por favor, clique nesta mensagem.
     </div>
     <div class="merchBanner hidden">
       <img src="images/merchdropwebsite2.png" alt="" />
       <div class="text">
-        We've got brand new merch designs over at
+        Temos novos designs de produtos em
         <a href="https://monkeytype.store" target="_blank">monkeytype.store</a>
       </div>
       <i class="fas closeButton fa-times"></i>
@@ -104,21 +104,19 @@
 
     <div id="practiseWordsPopupWrapper" class="popupWrapper hidden">
       <div id="practiseWordsPopup" action="">
-        <div class="title">Practice words</div>
+        <div class="title">Praticar palavras</div>
         <div class="text">
-          This will start a new test in custom mode. Words that you mistyped
-          more often or words that you typed much slower will be weighted higher
-          and appear more often.
+          Isso iniciará um novo teste no modo personalizado. Palavras que você digitou incorretamente mais frequentemente ou palavras que você digitou muito mais devagar terão maior peso e aparecerão com mais frequência.
         </div>
-        <div class="button missed" tabindex="1">Practice missed</div>
-        <div class="button slow" tabindex="1">Practice slow</div>
-        <div class="button both" tabindex="1">Practice both</div>
+        <div class="button missed" tabindex="1">Praticar erradas</div>
+        <div class="button slow" tabindex="1">Praticar lentas</div>
+        <div class="button both" tabindex="1">Praticar ambas</div>
       </div>
     </div>
     <div id="settingsImportWrapper" class="hidden">
       <div id="settingsImport" action="">
         <input type="text" />
-        <div class="button">import settings</div>
+        <div class="button">importar configurações</div>
       </div>
     </div>
 
@@ -132,45 +130,43 @@
       <div id="customTextPopup" action="">
         <div class="wordfilter button">
           <i class="fas fa-filter"></i>
-          Words filter
+          Filtro de palavras
         </div>
-        <textarea class="textarea" placeholder="Custom text"></textarea>
+        <textarea class="textarea" placeholder="Texto personalizado"></textarea>
         <div class="inputs">
           <label class="checkbox">
             <input type="checkbox" />
             <div class="customTextCheckbox"></div>
-            Random
+            Aleatório
             <span>
-              randomize the above words, and control how many words are
-              generated.
+              embaralha as palavras acima e controla quantas palavras são geradas.
             </span>
           </label>
           <div class="randomInputFields hidden">
             <label class="wordcount">
-              Word count
+              Quantidade de palavras
               <input type="number" value="" min="1" max="10000" />
             </label>
-            <div style="color: var(--sub-color)">or</div>
+            <div style="color: var(--sub-color)">ou</div>
             <label class="time">
-              Time
+              Tempo
               <input type="number" value="" min="1" max="10000" />
             </label>
           </div>
           <label class="checkbox typographyCheck">
             <input type="checkbox" checked />
             <div class="customTextCheckbox customTextTypographyCheckbox"></div>
-            Remove Fancy Typography
+            Remover tipografia especial
             <span>
-              Standardises typography symbols (for example “ and ” become ")
+              Padroniza símbolos tipográficos (por exemplo " e " viram ")
             </span>
           </label>
           <label class="checkbox delimiterCheck">
             <input type="checkbox" />
             <div class="customTextCheckbox customTextDelimiterCheckbox"></div>
-            Pipe Delimiter
+            Delimitador de barra vertical
             <span>
-              Change how words are separated. Using the pipe delimiter allows
-              you to randomize groups of words.
+              Muda como as palavras são separadas. Usar o delimitador de barra vertical permite randomizar grupos de palavras.
             </span>
           </label>
         </div>
@@ -180,12 +176,12 @@
     <div id="wordFilterPopupWrapper" class="popupWrapper hidden">
       <div id="wordFilterPopup">
         <div class="group">
-          <div class="title">language</div>
+          <div class="title">idioma</div>
           <select class="languageInput" class=""></select>
         </div>
         <div class="group lengthgrid">
-          <div class="title">min length</div>
-          <div class="title">max length</div>
+          <div class="title">comprimento mín</div>
+          <div class="title">comprimento máx</div>
           <input
             class="wordLength wordMinInput"
             autocomplete="off"
@@ -198,47 +194,47 @@
           />
         </div>
         <div class="group">
-          <div class="title">include</div>
+          <div class="title">incluir</div>
           <input class="wordIncludeInput" autocomplete="off" />
         </div>
         <div class="group">
-          <div class="title">exclude</div>
+          <div class="title">excluir</div>
           <input class="wordExcludeInput" autocomplete="off" />
         </div>
         <div class="tip">
-          Use the above filters to include and exclude words or characters
-          (separated by spaces)
+          Use os filtros acima para incluir e excluir palavras ou caracteres
+          (separados por espaços)
         </div>
         <div class="tip">
-          "Set" replaces the current custom word list with the filter result,
-          "Add" appends the filter result to the current custom word list
+          "Definir" substitui a lista atual de palavras personalizadas pelo resultado do filtro,
+          "Adicionar" anexa o resultado do filtro à lista atual de palavras personalizadas
         </div>
         <i
           class="fas fa-fw fa-spin fa-circle-notch hidden loadingIndicator"
         ></i>
-        <div class="button" id="set">set</div>
-        <div class="button">add</div>
+        <div class="button" id="set">definir</div>
+        <div class="button">adicionar</div>
       </div>
     </div>
     <div id="customWordAmountPopupWrapper" class="popupWrapper hidden">
       <div id="customWordAmountPopup">
-        <div class="title">Word amount</div>
+        <div class="title">Quantidade de palavras</div>
         <input type="number" value="1" min="1" max="10000" />
         <div class="tip">
-          You can start an infinite test by inputting 0. Then, to stop the test,
-          use the Bail Out feature (esc or ctrl/cmd + shift + p > Bail Out)
+          Você pode iniciar um teste infinito digitando 0. Para parar o teste,
+          use o recurso Sair (esc ou ctrl/cmd + shift + p > Sair)
         </div>
         <div class="button">ok</div>
       </div>
     </div>
     <div id="customTestDurationPopupWrapper" class="popupWrapper hidden">
       <div id="customTestDurationPopup">
-        <div class="title">Test duration</div>
+        <div class="title">Duração do teste</div>
         <div class="preview"></div>
         <input value="1" />
         <div class="tip">
-          You can start an infinite test by inputting 0. Then, to stop the test,
-          use the Bail Out feature (esc or ctrl/cmd + shift + p > Bail Out)
+          Você pode iniciar um teste infinito digitando 0. Para parar o teste,
+          use o recurso Sair (esc ou ctrl/cmd + shift + p > Sair)
         </div>
         <div class="button">ok</div>
       </div>
@@ -246,7 +242,7 @@
     <div id="quoteSearchPopupWrapper" class="popupWrapper hidden">
       <div id="quoteSearchPopup" mode="">
         <div id="quoteSearchTop">
-          <div class="title">Quote Search</div>
+          <div class="title">Buscar citação</div>
         </div>
         <input
           id="searchBox"
@@ -255,39 +251,38 @@
           maxlength="200"
           autocomplete="off"
         />
-        <div id="extraResults">No search results</div>
+        <div id="extraResults">Nenhum resultado de busca</div>
         <div id="quoteSearchResults" class="quoteSearchResults"></div>
       </div>
     </div>
     <div id="versionHistoryWrapper" class="hidden">
       <div id="versionHistory">
-        <div class="tip">Click anywhere to dismiss</div>
+        <div class="tip">Clique em qualquer lugar para fechar</div>
         <div class="releases">
           <div class="release">
             <div class="title">v1</div>
             <div class="date">010101</div>
-            <div class="body">test</div>
+            <div class="body">teste</div>
           </div>
           <div class="release">
             <div class="title">v2</div>
             <div class="date">010101</div>
-            <div class="body">test</div>
+            <div class="body">teste</div>
           </div>
         </div>
       </div>
     </div>
     <div id="supportMeWrapper" class="hidden">
       <div id="supportMe">
-        <div class="title">Support Monkeytype</div>
+        <div class="title">Apoie o Monkeytype</div>
         <div class="text">
-          Thank you so much for thinking about supporting this project. It would
-          not be possible without you and your continued support.
+          Muito obrigado por pensar em apoiar este projeto. Não seria possível sem você e seu apoio contínuo.
           <i class="fas fa-heart"></i>
         </div>
         <div class="buttons">
           <a class="button" href="https://ko-fi.com/monkeytype" target="_blank">
             <div class="icon"><i class="fas fa-donate"></i></div>
-            <div class="text">Donate</div>
+            <div class="text">Doar</div>
           </a>
           <a
             class="button"
@@ -296,14 +291,14 @@
           >
             <div class="icon"><i class="fab fa-patreon"></i></div>
             <div class="text">
-              Become
+              Tornar-se
               <br />
-              a Patron
+              um Patrono
             </div>
           </a>
           <a class="button" href="https://monkeytype.store" target="_blank">
             <div class="icon"><i class="fas fa-tshirt"></i></div>
-            <div class="text">Buy Merch</div>
+            <div class="text">Comprar Produtos</div>
           </a>
         </div>
       </div>
@@ -320,14 +315,14 @@
           <div class="searchicon">
             <i class="fas fa-search"></i>
           </div>
-          <input type="text" class="input" placeholder="Type to search" />
+          <input type="text" class="input" placeholder="Digite para buscar" />
         </div>
         <div class="separator hidden"></div>
-        <div class="listTitle">Title</div>
+        <div class="listTitle">Título</div>
         <div class="suggestions"></div>
       </div>
       <div id="commandInput" class="hidden">
-        <input type="text" class="input" placeholder="input" />
+        <input type="text" class="input" placeholder="entrada" />
       </div>
     </div>
     <div id="timerWrapper">
@@ -384,7 +379,7 @@
               <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="-160 -930 260 140"><path d=" M 20 -850 L 20 -850 L 20 -820 C 20 -814.481 24.481 -810 30 -810 L 30 -810 C 35.519 -810 40 -814.481 40 -820 L 40 -850 L 40 -850 L 68.82 -850 C 74.99 -850 80 -854.481 80 -860 L 80 -860 C 80 -865.519 74.99 -870 68.82 -870 L -8.82 -870 C -14.99 -870 -20 -865.519 -20 -860 L -20 -860 C -20 -854.481 -14.99 -850 -8.82 -850 L 20 -850 L 20 -850 L 20 -850 L 20 -850 Z  M -40.009 -880.515 C -40.28 -896.836 -53.615 -910 -70 -910 L -70 -910 L -70 -910 L -70 -890 L -70 -890 L -70 -890 L -70 -910 L -70 -910 C -77.68 -910 -84.69 -907.108 -90 -902.355 L -90 -902.355 C -95.31 -907.108 -102.32 -910 -110 -910 L -110 -910 C -126.385 -910 -139.72 -896.836 -139.991 -880.515 L -139.991 -880.515 C -139.996 -880.344 -140 -880.172 -140 -880 L -140 -880 L -140 -860 C -140 -854.481 -135.519 -850 -130 -850 L -130 -850 C -124.481 -850 -120 -854.481 -120 -860 L -120 -880 L -120 -880 C -120 -885.519 -115.519 -890 -110 -890 L -110 -890 L -110 -890 L -110 -890 L -110 -890 C -104.481 -890 -100 -885.519 -100 -880 L -100 -880 L -100 -880 L -100 -880 L -100 -880 L -100 -880 L -100 -880 L -100 -880 L -100 -880 L -100 -860 C -100 -854.481 -95.519 -850 -90 -850 L -90 -850 C -84.481 -850 -80 -854.481 -80 -860 L -80 -860 L -80 -880 L -80 -880 L -80 -880 L -80 -880 L -80 -880 L -80 -880 L -80 -880 C -80 -885.519 -75.519 -890 -70 -890 L -70 -890 L -70 -890 L -70 -890 L -70 -890 C -64.481 -890 -60 -885.519 -60 -880 L -60 -880 L -60 -860 C -60 -854.481 -55.519 -850 -50 -850 L -50 -850 C -44.481 -850 -40 -854.481 -40 -860 L -40 -880 L -40 -880 C -40 -880.172 -40.004 -880.344 -40.009 -880.515 L -40.009 -880.515 L -40.009 -880.515 L -40.009 -880.515 L -40.009 -880.515 Z  M 70 -830 L 70 -830 C 75.519 -830 80 -825.519 80 -820 L 80 -820 C 80 -814.481 75.519 -810 70 -810 L 70 -810 C 64.481 -810 60 -814.481 60 -820 L 60 -820 C 60 -825.519 64.481 -830 70 -830 L 70 -830 L 70 -830 L 70 -830 L 70 -830 L 70 -830 L 70 -830 L 70 -830 Z  M -70 -830 L -10 -830 C -4.481 -830 0 -825.519 0 -820 L 0 -820 C 0 -814.481 -4.481 -810 -10 -810 L -70 -810 C -75.519 -810 -80 -814.481 -80 -820 L -80 -820 C -80 -825.519 -75.519 -830 -70 -830 L -70 -830 L -70 -830 L -70 -830 L -70 -830 L -70 -830 L -70 -830 Z  M 30 -910 L 70 -910 C 75.519 -910 80 -905.519 80 -900 L 80 -900 C 80 -894.481 75.519 -890 70 -890 L 30 -890 C 24.481 -890 20 -894.481 20 -900 L 20 -900 C 20 -905.519 24.481 -910 30 -910 L 30 -910 L 30 -910 Z  M -130 -830 L -110 -830 C -104.481 -830 -100 -825.519 -100 -820 L -100 -820 C -100 -814.481 -104.481 -810 -110 -810 L -130 -810 C -135.519 -810 -140 -814.481 -140 -820 L -140 -820 C -140 -825.519 -135.519 -830 -130 -830 L -130 -830 Z  M -131.156 -930 L 71.156 -930 C 87.075 -930 100 -917.075 100 -901.156 L 100 -818.844 C 100 -802.925 87.075 -790 71.156 -790 L -131.156 -790 C -147.075 -790 -160 -802.925 -160 -818.844 L -160 -901.156 C -160 -917.075 -147.075 -930 -131.156 -930 L -131.156 -930 L -131.156 -930 L -131.156 -930 L -131.156 -930 L -131.156 -930 L -131.156 -930 L -131.156 -930 L -131.156 -930 L -131.156 -930 L -131.156 -930 L -131.156 -930 L -131.156 -930 L -131.156 -930 L -131.156 -930 Z  M -15 -910 L -10 -910 C -4.481 -910 0 -905.519 0 -900 L 0 -900 C 0 -894.481 -4.481 -890 -10 -890 L -15 -890 C -20.519 -890 -25 -894.481 -25 -900 L -25 -900 C -25 -905.519 -20.519 -910 -15 -910 Z " fill-rule="evenodd"/></svg> -->
             </div>
             <div class="text">
-              <div class="top">monkey see</div>
+              <div class="top">vê o macaco</div>
               monkeytype
             </div>
             <!-- <image fill="red" xlink:href="images/logo1.svg" width="96" height="96"/> -->
@@ -447,7 +442,7 @@
                 <!--           <div class="title">time</div> -->
                 <div class="buttons">
                   <div class="text-button toggleButton" tabindex="2">
-                    punctuation
+                    pontuação
                   </div>
                 </div>
               </div>
@@ -455,7 +450,7 @@
                 <!--           <div class="title">time</div> -->
                 <div class="buttons">
                   <div class="text-button toggleButton" tabindex="2">
-                    numbers
+                    números
                   </div>
                 </div>
               </div>
@@ -464,12 +459,12 @@
               <!--           <div class="title">mode</div> -->
               <div class="buttons">
                 <div class="text-button active" mode="time" tabindex="2">
-                  time
+                  tempo
                 </div>
-                <div class="text-button" mode="words" tabindex="2">words</div>
-                <div class="text-button" mode="quote" tabindex="2">quote</div>
+                <div class="text-button" mode="words" tabindex="2">palavras</div>
+                <div class="text-button" mode="quote" tabindex="2">citação</div>
                 <div class="text-button" mode="zen" tabindex="2">zen</div>
-                <div class="text-button" mode="custom" tabindex="2">custom</div>
+                <div class="text-button" mode="custom" tabindex="2">personalizado</div>
               </div>
             </div>
             <div class="group wordCount hidden">
@@ -503,16 +498,16 @@
             <div class="group quoteLength hidden">
               <!--           <div class="title">time</div> -->
               <div class="buttons">
-                <div class="text-button" quoteLength="-1" tabindex="2">all</div>
+                <div class="text-button" quoteLength="-1" tabindex="2">todas</div>
                 <div class="text-button" quoteLength="0" tabindex="2">
-                  short
+                  curtas
                 </div>
                 <div class="text-button active" quoteLength="1" tabindex="2">
-                  medium
+                  médias
                 </div>
-                <div class="text-button" quoteLength="2" tabindex="2">long</div>
+                <div class="text-button" quoteLength="2" tabindex="2">longas</div>
                 <div class="text-button" quoteLength="3" tabindex="2">
-                  thicc
+                  enormes
                 </div>
                 <div class="text-button" quoteLength="-2" tabindex="2">
                   <i class="fas fa-search"></i>
@@ -522,7 +517,7 @@
             <div class="group customText hidden">
               <!--           <div class="title">time</div> -->
               <div class="buttons">
-                <div class="text-button">change</div>
+                <div class="text-button">alterar</div>
               </div>
             </div>
           </div>
@@ -534,7 +529,7 @@
                 <i class="fas fa-lock"></i>
                 Caps Lock
               </div>
-              <div id="memoryTimer">Time left to memorise all words: 0s</div>
+              <div id="memoryTimer">Tempo restante para memorizar todas as palavras: 0s</div>
               <div id="testModesNotice"></div>
               <input
                 id="wordsInput"
@@ -556,7 +551,7 @@
               </div>
               <div class="outOfFocusWarning hidden">
                 <i class="fas fa-mouse-pointer"></i>
-                Click or press any key to focus
+                Clique ou pressione qualquer tecla para focar
               </div>
               <div id="wordsWrapper" translate="no">
                 <div id="paceCaret" class="default size15 hidden"></div>
@@ -744,7 +739,7 @@
               </div>
               <div
                 id="restartTestButton"
-                aria-label="Restart Test"
+                aria-label="Reiniciar Teste"
                 data-balloon-pos="down"
                 class=""
                 tabindex="0"
@@ -773,7 +768,7 @@
 
                 <div class="group wpm">
                   <div class="top">
-                    <div class="text">wpm</div>
+                    <div class="text">ppm</div>
                     <div
                       class="crown hidden"
                       aria-label=""
@@ -787,7 +782,7 @@
                   </div>
                 </div>
                 <div class="group acc">
-                  <div class="top">acc</div>
+                  <div class="top">precisão</div>
                   <div class="bottom" aria-label="" data-balloon-pos="up">
                     -
                   </div>
@@ -795,28 +790,28 @@
               </div>
               <div class="stats morestats">
                 <div class="group testType">
-                  <div class="top">test type</div>
+                  <div class="top">tipo de teste</div>
                   <div class="bottom">-</div>
                 </div>
                 <!-- <div class="group infoAndTags"> -->
                 <div class="group info">
-                  <div class="top">other</div>
+                  <div class="top">outros</div>
                   <div class="bottom">-</div>
                 </div>
 
                 <!-- </div> -->
                 <!-- <div class="subgroup"> -->
                 <div class="group raw">
-                  <div class="top">raw</div>
+                  <div class="top">bruto</div>
                   <div class="bottom" aria-label="" data-balloon-pos="up">
                     -
                   </div>
                 </div>
                 <div class="group key">
-                  <div class="top">characters</div>
+                  <div class="top">caracteres</div>
                   <div
                     class="bottom"
-                    aria-label="correct, incorrect, extra, and missed"
+                    aria-label="corretos, incorretos, extras e perdidos"
                     data-balloon-break=""
                     data-balloon-pos="up"
                   >
@@ -828,13 +823,13 @@
 
                 <!-- <div class="subgroup"> -->
                 <div class="group flat consistency">
-                  <div class="top">consistency</div>
+                  <div class="top">consistência</div>
                   <div class="bottom" aria-label="" data-balloon-pos="up">
                     2 -
                   </div>
                 </div>
                 <div class="group time">
-                  <div class="top">time</div>
+                  <div class="top">tempo</div>
                   <div class="bottom" aria-label="" data-balloon-pos="up">
                     <div class="text">-</div>
                     <div class="afk"></div>
@@ -845,11 +840,11 @@
 
                 <div class="group source hidden">
                   <div class="top">
-                    source
+                    fonte
                     <span
                       id="rateQuoteButton"
                       class="icon-button hidden"
-                      aria-label="Rate quote"
+                      aria-label="Avaliar citação"
                       data-balloon-pos="up"
                       style="display: inline-block"
                     >
@@ -867,11 +862,11 @@
               <div class="bottom" style="grid-column: 1/3">
                 <div id="resultWordsHistory" class="hidden">
                   <div class="title">
-                    input history
+                    histórico de entrada
                     <span
                       id="copyWordsListButton"
                       class="icon-button"
-                      aria-label="Copy words list"
+                      aria-label="Copiar lista de palavras"
                       data-balloon-pos="up"
                       style="display: inline-block"
                     >
@@ -880,14 +875,14 @@
                     <span
                       id="toggleBurstHeatmap"
                       class="icon-button"
-                      aria-label="Toggle burst heatmap"
+                      aria-label="Alternar mapa de calor de velocidade"
                       data-balloon-pos="up"
                       style="display: inline-block"
                     >
                       <i class="fas fa-fw fa-fire-alt"></i>
                     </span>
                     <div class="heatmapLegend hidden">
-                      <div>slow</div>
+                      <div>lento</div>
                       <div class="boxes">
                         <div class="box"></div>
                         <div class="box"></div>
@@ -895,18 +890,18 @@
                         <div class="box"></div>
                         <div class="box"></div>
                       </div>
-                      <div>fast</div>
+                      <div>rápido</div>
                     </div>
                   </div>
                   <div class="words"></div>
                 </div>
                 <div id="resultReplay" class="hidden">
                   <div class="title">
-                    watch replay
+                    assistir replay
                     <span
                       id="playpauseReplayButton"
                       class="icon-button"
-                      aria-label="Start replay"
+                      aria-label="Iniciar replay"
                       data-balloon-pos="up"
                       style="display: inline-block"
                     >
@@ -921,7 +916,7 @@
                 <div class="buttons">
                   <div
                     id="nextTestButton"
-                    aria-label="Next test"
+                    aria-label="Próximo teste"
                     data-balloon-pos="down"
                     tabindex="0"
                     onclick="this.blur();"
@@ -930,7 +925,7 @@
                   </div>
                   <div
                     id="restartTestButtonWithSameWordset"
-                    aria-label="Repeat test"
+                    aria-label="Repetir teste"
                     data-balloon-pos="down"
                     tabindex="0"
                     onclick="this.blur();"
@@ -939,7 +934,7 @@
                   </div>
                   <div
                     id="practiseWordsButton"
-                    aria-label="Practice words"
+                    aria-label="Praticar palavras"
                     data-balloon-pos="down"
                     tabindex="0"
                     onclick="this.blur();"
@@ -948,7 +943,7 @@
                   </div>
                   <div
                     id="showWordHistoryButton"
-                    aria-label="Toggle words history"
+                    aria-label="Alternar histórico de palavras"
                     data-balloon-pos="down"
                     tabindex="0"
                     onclick="this.blur();"
@@ -957,7 +952,7 @@
                   </div>
                   <div
                     id="watchReplayButton"
-                    aria-label="Watch replay"
+                    aria-label="Assistir replay"
                     data-balloon-pos="down"
                     tabindex="0"
                     onclick="this.blur();"
@@ -966,7 +961,7 @@
                   </div>
                   <div
                     id="saveScreenshotButton"
-                    aria-label="Save screenshot"
+                    aria-label="Salvar captura de tela"
                     data-balloon-pos="down"
                     tabindex="0"
                     onclick="this.blur();"
@@ -983,103 +978,92 @@
               <i class="fas fa-angle-double-up"></i>
             </div>
             <div class="created">
-              Created with love by Miodec.
-              <a href="#supporters_title">Supported</a>
-              and
-              <a href="#contributors_title">expanded</a>
-              by many awesome people. Launched on 15th of May, 2020.
+              Criado com amor por Miodec.
+              <a href="#supporters_title">Apoiado</a>
+              e
+              <a href="#contributors_title">expandido</a>
+              por muitas pessoas incríveis. Lançado em 15 de maio de 2020.
             </div>
             <div class="section">
-              <div class="title">about</div>
+              <div class="title">sobre</div>
               <!-- <h1>about</h1> -->
               <p>
-                Monkeytype is a minimalistic typing test, featuring many test
-                modes, an account system to save your typing speed history and
-                user configurable features like themes, a smooth caret and more.
+                Monkeytype é um site de teste de digitação minimalista, apresentando muitos modos de teste, um sistema de conta para salvar seu histórico de velocidade de digitação e recursos configuráveis pelo usuário como temas, cursor suave e muito mais.
               </p>
             </div>
             <div class="section">
-              <h1>word set</h1>
+              <h1>conjunto de palavras</h1>
               <p>
-                By default, this website uses the most common 200 words in the
-                English language to generate its tests. You can change to an
-                expanded set (1000 most common words) in the options, or change
-                the language entirely.
+                Por padrão, este site usa as 200 palavras mais comuns do idioma inglês para gerar seus testes. Você pode alterar para um conjunto expandido (1000 palavras mais comuns) nas opções, ou alterar o idioma inteiramente.
               </p>
             </div>
             <div class="section">
-              <h1>keybinds</h1>
+              <h1>teclas de atalho</h1>
               <p>
-                You can use
+                Você pode usar
                 <key>tab</key>
-                and
+                e
                 <key>enter</key>
-                (or just
+                (ou apenas
                 <key>tab</key>
-                if you have quick tab mode enabled) to restart the typing test.
-                Open the command line by pressing
+                se você tem o modo tab rápido habilitado) para reiniciar o teste de digitação.
+                Abra a linha de comando pressionando
                 <key>ctrl/cmd</key>
                 +
                 <key>shift</key>
                 +
                 <key>p</key>
-                or
+                ou
                 <key>esc</key>
-                - there you can access all the functionality you need without
-                touching your mouse
+                - lá você pode acessar toda a funcionalidade que precisa sem tocar no mouse
               </p>
             </div>
             <div class="section">
-              <h1>stats</h1>
+              <h1>estatísticas</h1>
               <p>
-                wpm - total amount of characters in the correctly typed words
-                (including spaces), divided by 5 and normalised to 60 seconds.
+                ppm - quantidade total de caracteres nas palavras digitadas corretamente
+                (incluindo espaços), dividido por 5 e normalizado para 60 segundos.
               </p>
               <p>
-                raw wpm - calculated just like wpm, but also includes incorrect
-                words.
+                ppm bruto - calculado exatamente como ppm, mas também inclui palavras incorretas.
               </p>
-              <p>acc - percentage of correctly pressed keys.</p>
+              <p>precisão - porcentagem de teclas pressionadas corretamente.</p>
               <p>
-                char - correct characters / incorrect characters. Calculated
-                after the test has ended.
+                char - caracteres corretos / caracteres incorretos. Calculado
+                após o término do teste.
               </p>
               <p>
-                consistency - based on the variance of your raw wpm. Closer to
-                100% is better. Calculated using the coefficient of variation of
-                raw wpm and mapped onto a scale from 0 to 100.
-              </p>
-            </div>
-            <div class="section">
-              <h1>results screen</h1>
-              <p>
-                After completing a test you will be able to see your wpm, raw
-                wpm, accuracy, character stats, test length, leaderboards info
-                and test info. (you can hover over some values to get floating
-                point numbers). You can also see a graph of your wpm and raw
-                over the duration of the test. Remember that the wpm line is a
-                global average, while the raw wpm line is a local, momentary
-                value. (meaning if you stop, the value is 0)
+                consistência - baseada na variância do seu ppm bruto. Mais próximo de
+                100% é melhor. Calculado usando o coeficiente de variação do
+                ppm bruto e mapeado em uma escala de 0 a 100.
               </p>
             </div>
             <div class="section">
-              <h1>bug report or feature request</h1>
+              <h1>tela de resultados</h1>
               <p>
-                If you encounter a bug, or have a feature request - join the
-                Discord server, send me an email, a direct message on Twitter or
-                create an issue on GitHub.
+                Após completar um teste você poderá ver seu ppm, ppm bruto, precisão, estatísticas de caracteres, duração do teste, informações da classificação
+                e informações do teste. (você pode passar o mouse sobre alguns valores para obter números decimais). Você também pode ver um gráfico do seu ppm e bruto
+                durante a duração do teste. Lembre-se que a linha ppm é uma
+                média global, enquanto a linha ppm bruto é um valor local e momentâneo. (significa que se você parar, o valor é 0)
               </p>
             </div>
             <div class="section">
-              <div class="title">support</div>
+              <h1>relatar bug ou solicitar recurso</h1>
               <p>
-                Thanks to everyone who has supported this project. It would not
-                be possible without you and your continued support.
+                Se você encontrar um bug, ou tem uma solicitação de recurso - entre no
+                servidor do Discord, me envie um email, uma mensagem direta no Twitter ou
+                crie uma issue no GitHub.
+              </p>
+            </div>
+            <div class="section">
+              <div class="title">apoio</div>
+              <p>
+                Obrigado a todos que apoiaram este projeto. Não seria possível sem vocês e seu apoio contínuo.
               </p>
               <div class="supportButtons">
                 <a class="button ads">
                   <div class="fas fas fa-ad"></div>
-                  Ads
+                  Anúncios
                 </a>
                 <a
                   class="button"
@@ -1103,16 +1087,14 @@
                   target="_blank"
                 >
                   <div class="fas fa-tshirt"></div>
-                  Merch
+                  Produtos
                 </a>
               </div>
             </div>
             <div class="section">
-              <div class="title">contact</div>
+              <div class="title">contato</div>
               <p>
-                If you encounter a bug, have a feature request or just want to
-                say hi - here are the different ways you can contact me
-                directly.
+                Se você encontrar um bug, tem uma solicitação de recurso ou só quer dizer oi - aqui estão as diferentes maneiras de entrar em contato comigo diretamente.
               </p>
               <div class="contactButtons">
                 <a
@@ -1121,7 +1103,7 @@
                   target="_blank"
                 >
                   <div class="fas fa-envelope"></div>
-                  Mail
+                  Email
                 </a>
                 <a
                   class="button"
@@ -1150,42 +1132,42 @@
               </div>
             </div>
             <div class="section">
-              <div class="title">credits</div>
+              <div class="title">créditos</div>
               <p>
                 <a href="https://www.reddit.com/user/montydrei" target="_blank">
                   Montydrei
                 </a>
-                for the name suggestion
+                pela sugestão do nome
               </p>
               <p>
                 <a
                   href="https://www.reddit.com/r/MechanicalKeyboards/comments/gc6wx3/experimenting_with_a_completely_new_type_of/"
                   target="_blank"
                 >
-                  Everyone
+                  Todos
                 </a>
-                who provided valuable feedback on the original reddit post for
-                the prototype of this website
+                que forneceram feedback valioso no post original do reddit para
+                o protótipo deste site
               </p>
               <p>
-                <a href="#supporters_title">Supporters</a>
-                who helped financially by donating, enabling optional ads or
-                buying merch
+                <a href="#supporters_title">Apoiadores</a>
+                que ajudaram financeiramente doando, habilitando anúncios opcionais ou
+                comprando produtos
               </p>
               <p>
                 <a
                   href="https://github.com/Miodec/monkeytype/graphs/contributors"
                   target="_blank"
                 >
-                  Contributors
+                  Contribuidores
                 </a>
-                on GitHub that have helped with implementing various features,
-                adding themes and more
+                no GitHub que ajudaram implementando vários recursos,
+                adicionando temas e mais
               </p>
             </div>
             <div id="ad_about2" class="hidden"></div>
             <div class="section">
-              <h1 id="supporters_title">supporters</h1>
+              <h1 id="supporters_title">apoiadores</h1>
               <div class="supporters">
                 <div>Not Gate</div>
                 <div>Corey</div>
@@ -1269,7 +1251,7 @@
               </div>
             </div>
             <div class="section">
-              <h1 id="contributors_title">contributors</h1>
+              <h1 id="contributors_title">contribuidores</h1>
               <div class="contributors">
                 <div>typerqeo</div>
                 <div>bhomie</div>
@@ -1434,42 +1416,42 @@
               <i class="fas fa-angle-double-up"></i>
             </div>
             <div class="tip">
-              tip: You can also change all these settings quickly using the
-              command line (
+              dica: Você também pode alterar todas essas configurações rapidamente usando a
+              linha de comando (
               <key>ctrl/cmd</key>
               +
               <key>shift</key>
               +
               <key>p</key>
-              or
+              ou
               <key>esc</key>
               )
             </div>
             <!-- <div class="sectionGroupTitle">quick navigation</div> -->
             <div class="settingsGroup quickNav">
               <div class="links">
-                <a href="#group_behavior">behavior</a>
-                <a href="#group_input">input</a>
-                <a href="#group_sound">sound</a>
-                <a href="#group_caret">caret</a>
-                <a href="#group_appearance">appearance</a>
-                <a href="#group_theme">theme</a>
-                <a href="#group_hideElements">hide elements</a>
-                <a href="#group_dangerZone">danger zone</a>
+                <a href="#group_behavior">comportamento</a>
+                <a href="#group_input">entrada</a>
+                <a href="#group_sound">som</a>
+                <a href="#group_caret">cursor</a>
+                <a href="#group_appearance">aparência</a>
+                <a href="#group_theme">tema</a>
+                <a href="#group_hideElements">ocultar elementos</a>
+                <a href="#group_dangerZone">zona de perigo</a>
               </div>
             </div>
             <div id="group_behavior" class="sectionGroupTitle" group="behavior">
-              behavior
+              comportamento
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="settingsGroup behavior">
               <div class="section difficulty">
-                <h1>test difficulty</h1>
+                <h1>dificuldade do teste</h1>
                 <div class="text">
-                  Normal is the classic type test experience. Expert fails the
-                  test if you submit (press space) an incorrect word. Master
-                  fails if you press a single incorrect key (meaning you have to
-                  achieve 100% accuracy).
+                  Normal é a experiência clássica de teste de digitação. Expert falha o
+                  teste se você submeter (pressionar espaço) uma palavra incorreta. Master
+                  falha se você pressionar uma única tecla incorreta (significa que você tem que
+                  alcançar 100% de precisão).
                 </div>
                 <div class="buttons">
                   <div
@@ -1499,29 +1481,28 @@
                 </div>
               </div>
               <div class="section quickTab" id="quickTab">
-                <h1>quick tab mode</h1>
+                <h1>modo tab rápido</h1>
                 <div class="text">
-                  Press
+                  Pressione
                   <key>tab</key>
-                  to quickly restart the test, or to quickly jump to the test
-                  page. This function disables tab navigation on the website.
+                  para reiniciar rapidamente o teste, ou para pular rapidamente para a página do teste. Esta função desabilita a navegação por tab no site.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
 
               <div class="section repeatQuotes" id="repeatQuotes">
-                <h1>repeat quotes</h1>
+                <h1>repetir citações</h1>
                 <div class="text">
-                  This setting changes the restarting behavior when typing in
-                  quote mode. Changing it to 'typing' will repeat the quote if
-                  you restart while typing.
+                  Esta configuração altera o comportamento de reinicialização ao digitar no
+                  modo citação. Alterar para 'digitando' repetirá a citação se
+                  você reiniciar enquanto digita.
                 </div>
                 <!-- , and 'always' will always repeat the quote (you will need to press <key>shift + tab</key> to move on to the next quote). -->
                 <div class="buttons">
@@ -1531,7 +1512,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    off
+                    desligado
                   </div>
                   <div
                     class="button"
@@ -1539,7 +1520,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    typing
+                    digitando
                   </div>
                   <!-- <div class="button" repeatQuotes="always" tabindex="0" onclick="this.blur();">
                     always
@@ -1548,14 +1529,14 @@
               </div>
 
               <div class="section blindMode">
-                <h1>blind mode</h1>
+                <h1>modo cego</h1>
                 <div class="text">
-                  No errors or incorrect words are highlighted. Helps you to
-                  focus on raw speed. If enabled, quick end is recommended.
+                  Nenhum erro ou palavras incorretas são destacadas. Ajuda você a
+                  focar na velocidade bruta. Se habilitado, término rápido é recomendado.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
                     ⠀
@@ -1578,26 +1559,26 @@
                 </div>
               </div> -->
               <div class="section alwaysShowWordsHistory">
-                <h1>always show words history</h1>
+                <h1>sempre mostrar histórico de palavras</h1>
                 <div class="text">
-                  This option will automatically show the words history at the
-                  end of the test. Can cause slight lag with a lot of words.
+                  Esta opção mostrará automaticamente o histórico de palavras no
+                  final do teste. Pode causar pequeno lag com muitas palavras.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section singleListCommandLine">
-                <h1>single list command line</h1>
+                <h1>linha de comando em lista única</h1>
                 <div class="text">
-                  When enabled, it will show the command line with all commands
-                  in a single list instead of submenu arrangements. Selecting
-                  'manual' will expose all commands only after typing
+                  Quando habilitado, mostrará a linha de comando com todos os comandos
+                  em uma única lista ao invés de arranjos de submenu. Selecionar
+                  'manual' exposará todos os comandos apenas após digitar
                   <key>></key>
                   .
                 </div>
@@ -1616,21 +1597,21 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section minWpm" section="">
-                <h1>min wpm</h1>
+                <h1>ppm mínimo</h1>
                 <div class="text">
-                  Automatically fails a test if your WPM falls below a
-                  threshold.
+                  Falha automaticamente um teste se seu PPM cair abaixo de um
+                  limite.
                 </div>
                 <div>
                   <div class="inputAndSave">
                     <input
                       type="number"
-                      placeholder="min wpm"
+                      placeholder="ppm mínimo"
                       class="input customMinWpmSpeed"
                       tabindex="0"
                       min="0"
@@ -1652,7 +1633,7 @@
                       tabindex="0"
                       onclick="this.blur();"
                     >
-                      off
+                      desligado
                     </div>
                     <div
                       class="button"
@@ -1660,22 +1641,22 @@
                       tabindex="0"
                       onclick="this.blur();"
                     >
-                      custom
+                      personalizado
                     </div>
                   </div>
                 </div>
               </div>
               <div class="section minAcc" section="">
-                <h1>min accuracy</h1>
+                <h1>precisão mínima</h1>
                 <div class="text">
-                  Automatically fails a test if your accuracy falls below a
-                  threshold.
+                  Falha automaticamente um teste se sua precisão cair abaixo de um
+                  limite.
                 </div>
                 <div>
                   <div class="inputAndSave">
                     <input
                       type="number"
-                      placeholder="min accuracy"
+                      placeholder="precisão mínima"
                       class="input customMinAcc"
                       tabindex="0"
                       min="0"
@@ -1697,7 +1678,7 @@
                       tabindex="0"
                       onclick="this.blur();"
                     >
-                      off
+                      desligado
                     </div>
                     <div
                       class="button"
@@ -1705,23 +1686,23 @@
                       tabindex="0"
                       onclick="this.blur();"
                     >
-                      custom
+                      personalizado
                     </div>
                   </div>
                 </div>
               </div>
               <div class="section minBurst" section="">
-                <h1>min burst</h1>
+                <h1>rajada mínima</h1>
                 <div class="text">
-                  Automatically fails a test if your raw for a single word falls
-                  below this threshold. Selecting 'flex' allows for this
-                  threshold to automatically decrease for longer words.
+                  Falha automaticamente um teste se seu bruto para uma única palavra cair
+                  abaixo deste limite. Selecionar 'flex' permite que este
+                  limite diminua automaticamente para palavras mais longas.
                 </div>
                 <div>
                   <div class="inputAndSave">
                     <input
                       type="number"
-                      placeholder="min burst"
+                      placeholder="rajada mínima"
                       class="input customMinBurst"
                       tabindex="0"
                       min="0"
@@ -1743,7 +1724,7 @@
                       tabindex="0"
                       onclick="this.blur();"
                     >
-                      off
+                      desligado
                     </div>
                     <div
                       class="button"
@@ -1751,7 +1732,7 @@
                       tabindex="0"
                       onclick="this.blur();"
                     >
-                      fixed
+                      fixo
                     </div>
                     <div
                       class="button"
@@ -1765,11 +1746,11 @@
                 </div>
               </div>
               <div class="section britishEnglish" section="">
-                <h1>british english</h1>
+                <h1>inglês britânico</h1>
                 <div class="text">
-                  When enabled, the website will use the British spelling
-                  instead of American. Note that this might not replace all
-                  words correctly. If you find any issues, please let us know.
+                  Quando habilitado, o site usará a ortografia britânica
+                  ao invés da americana. Note que isso pode não substituir todas as
+                  palavras corretamente. Se você encontrar problemas, por favor nos informe.
                 </div>
                 <div>
                   <div class="buttons">
@@ -1778,42 +1759,41 @@
                       tabindex="0"
                       onclick="this.blur();"
                     >
-                      off
+                      desligado
                     </div>
                     <div class="button on" tabindex="0" onclick="this.blur();">
-                      on
+                      ligado
                     </div>
                   </div>
                 </div>
               </div>
               <div class="section languageGroups fullWidth">
-                <h1>language groups</h1>
+                <h1>grupos de idiomas</h1>
                 <div class="buttons"></div>
               </div>
               <div class="section language fullWidth">
-                <h1>language</h1>
+                <h1>idioma</h1>
                 <div class="buttons"></div>
               </div>
               <div class="section funbox fullWidth">
-                <h1>funbox</h1>
+                <h1>caixa divertida</h1>
                 <div class="text">
-                  These are special modes that change the website in some
-                  special way (by altering the word generation, behavior of the
-                  website or the looks). Give each one of them a try!
+                  Estes são modos especiais que alteram o site de alguma
+                  forma especial (alterando a geração de palavras, comportamento do
+                  site ou a aparência). Experimente cada um deles!
                 </div>
                 <div class="buttons"></div>
               </div>
               <div class="sectionSpacer"></div>
               <div class="section customLayoutfluid">
-                <h1>custom layoutfluid</h1>
+                <h1>layout fluido personalizado</h1>
                 <div class="text">
-                  Select which layouts you want the layoutfluid funbox to cycle
-                  through.
+                  Selecione quais layouts você quer que a caixa divertida layoutfluid cicle.
                 </div>
                 <div class="inputAndSave">
                   <input
                     type="text"
-                    placeholder="layouts (separated by space)"
+                    placeholder="layouts (separados por espaço)"
                     class="input"
                     tabindex="0"
                   />
@@ -1825,52 +1805,52 @@
               <div class="sectionSpacer"></div>
             </div>
             <div id="group_input" class="sectionGroupTitle" group="input">
-              input
+              entrada
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="settingsGroup input">
               <div class="section freedomMode">
-                <h1>freedom mode</h1>
+                <h1>modo liberdade</h1>
                 <div class="text">
-                  Allows you to delete any word, even if it was typed correctly.
+                  Permite que você delete qualquer palavra, mesmo se ela foi digitada corretamente.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section strictSpace">
-                <h1>strict space</h1>
+                <h1>espaço estrito</h1>
                 <div class="text">
-                  Pressing space at the beginning of a word will insert a space
-                  character when this mode is enabled.
+                  Pressionar espaço no início de uma palavra inserirá um caractere
+                  de espaço quando este modo estiver habilitado.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section oppositeShiftMode">
-                <h1>opposite shift mode</h1>
+                <h1>modo shift oposto</h1>
                 <div class="text">
-                  This mode will force you to use opposite
+                  Este modo forçará você a usar teclas
                   <key>shift</key>
-                  keys for shifting. Using an incorrect one will count as an
-                  error. This feature ignores keys in locations
+                  opostas para mudança. Usar uma incorreta contará como um
+                  erro. Esta funcionalidade ignora teclas nas posições
                   <key>B</key>
                   ,
                   <key>Y</key>
-                  , and
+                  , e
                   <key>^</key>
-                  because many people use the other hand for those keys.
+                  porque muitas pessoas usam a outra mão para essas teclas.
                 </div>
                 <div class="buttons">
                   <div
@@ -1879,7 +1859,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    off
+                    desligado
                   </div>
                   <div
                     class="button"
@@ -1887,16 +1867,15 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section stopOnError">
-                <h1>stop on error</h1>
+                <h1>parar no erro</h1>
                 <div class="text">
-                  Letter mode will stop input when pressing any incorrect
-                  letters. Word mode will not allow you to continue to the next
-                  word until you correct all mistakes.
+                  Modo letra parará a entrada ao pressionar letras incorretas. Modo palavra não permitirá que você continue para a próxima
+                  palavra até corrigir todos os erros.
                 </div>
                 <div class="buttons">
                   <div
@@ -1905,7 +1884,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    off
+                    desligado
                   </div>
                   <div
                     class="button"
@@ -1913,7 +1892,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    word
+                    palavra
                   </div>
                   <div
                     class="button"
@@ -1921,16 +1900,15 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    letter
+                    letra
                   </div>
                 </div>
               </div>
               <div class="section confidenceMode">
-                <h1>confidence mode</h1>
+                <h1>modo confiança</h1>
                 <div class="text">
-                  When enabled, you will not be able to go back to previous
-                  words to fix mistakes. When turned up to the max, you won't be
-                  able to backspace at all.
+                  Quando habilitado, você não poderá voltar a palavras anteriores para corrigir erros. Quando aumentado ao máximo, você não conseguirá
+                  usar backspace de forma alguma.
                 </div>
                 <div class="buttons">
                   <div
@@ -1939,7 +1917,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    off
+                    desligado
                   </div>
 
                   <div
@@ -1948,7 +1926,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    on
+                    ligado
                   </div>
                   <div
                     class="button"
@@ -1956,103 +1934,103 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    max
+                    máximo
                   </div>
                 </div>
               </div>
               <div class="section quickEnd">
-                <h1>quick end</h1>
+                <h1>término rápido</h1>
                 <div class="text">
-                  This only applies to the words mode - when enabled, the test
-                  will end as soon as the last word has been typed, even if it's
-                  incorrect. When disabled, you need to manually confirm the
-                  last incorrect entry with a space.
+                  Isso se aplica apenas ao modo palavras - quando habilitado, o teste
+                  terminará assim que a última palavra for digitada, mesmo se estiver
+                  incorreta. Quando desabilitado, você precisa confirmar manualmente a
+                  última entrada incorreta com um espaço.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section indicateTypos" section="">
-                <h1>indicate typos</h1>
-                <div class="text">Shows typos underneath the letters.</div>
+                <h1>indicar erros de digitação</h1>
+                <div class="text">Mostra erros de digitação abaixo das letras.</div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section hideExtraLetters" section="">
-                <h1>hide extra letters</h1>
+                <h1>ocultar letras extras</h1>
                 <div class="text">
-                  Hides extra letters. This will completely avoid words jumping
-                  lines (due to changing width), but might feel a bit confusing
-                  when you press a key and nothing happens.
+                  Oculta letras extras. Isso evitará completamente palavras pularem
+                  linhas (devido à mudança de largura), mas pode parecer um pouco confuso
+                  quando você pressiona uma tecla e nada acontece.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section swapEscAndTab" section="">
-                <h1>swap esc and tab</h1>
+                <h1>trocar esc e tab</h1>
                 <div class="text">
-                  Swap the behavior of tab and escape keys.
+                  Troca o comportamento das teclas tab e escape.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section lazyMode">
-                <h1>lazy mode</h1>
+                <h1>modo preguiçoso</h1>
                 <div class="text">
-                  Replaces accented letters with their normal equivalents.
+                  Substitui letras acentuadas por seus equivalentes normais.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section layout fullWidth">
-                <h1>layout emulator</h1>
+                <h1>emulador de layout</h1>
                 <div class="text">
-                  With this setting you can emulate other layouts. This setting
-                  is best kept off, as it can break things like dead keys and
-                  alt layers.
+                  Com esta configuração você pode emular outros layouts. Esta configuração
+                  é melhor mantida desligada, pois pode quebrar coisas como teclas mortas e
+                  camadas alt.
                 </div>
                 <div class="buttons"></div>
               </div>
               <div class="sectionSpacer"></div>
             </div>
             <div id="group_sound" class="sectionGroupTitle" group="sound">
-              sound
+              som
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="settingsGroup sound">
               <div class="section playSoundOnClick fullWidth">
-                <h1>play sound on click</h1>
+                <h1>tocar som ao clicar</h1>
                 <div class="text">
-                  Plays a short sound when you press a key.
+                  Toca um som curto quando você pressiona uma tecla.
                 </div>
                 <div class="buttons">
                   <div
@@ -2061,7 +2039,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    off
+                    desligado
                   </div>
                   <div
                     class="button"
@@ -2069,7 +2047,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    click
+                    clique
                   </div>
                   <div
                     class="button"
@@ -2077,7 +2055,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    beep
+                    bipe
                   </div>
                   <div
                     class="button"
@@ -2101,7 +2079,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    typewriter
+                    máquina de escrever
                   </div>
                   <div
                     class="button"
@@ -2122,17 +2100,17 @@
                 </div>
               </div>
               <div class="section playSoundOnError">
-                <h1>play sound on error</h1>
+                <h1>tocar som no erro</h1>
                 <div class="text">
-                  Plays a short sound if you press an incorrect key or press
-                  space too early.
+                  Toca um som curto se você pressionar uma tecla incorreta ou pressionar
+                  espaço muito cedo.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
@@ -2140,28 +2118,28 @@
             </div>
 
             <div id="group_caret" class="sectionGroupTitle" group="caret">
-              caret
+              cursor
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="settingsGroup caret">
               <div class="section smoothCaret" section="">
-                <h1>smooth caret</h1>
+                <h1>cursor suave</h1>
                 <div class="text">
-                  The caret will move smoothly between letters and words.
+                  O cursor se moverá suavemente entre letras e palavras.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section caretStyle" section="">
-                <h1>caret style</h1>
+                <h1>estilo do cursor</h1>
                 <div class="text">
-                  Change the style of the caret during the test.
+                  Altera o estilo do cursor durante o teste.
                 </div>
                 <div class="buttons">
                   <div
@@ -2170,7 +2148,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    off
+                    desligado
                   </div>
                   <div
                     class="button"
@@ -2207,16 +2185,16 @@
                 </div>
               </div>
               <div class="section paceCaret" section="">
-                <h1>pace caret</h1>
+                <h1>cursor de ritmo</h1>
                 <div class="text">
-                  Displays a second caret that moves at constant speed. The
-                  'average' option average the speed of last 10 results.
+                  Exibe um segundo cursor que se move em velocidade constante. A
+                  opção 'média' calcula a média da velocidade dos últimos 10 resultados.
                 </div>
                 <div>
                   <div class="inputAndSave">
                     <input
                       type="number"
-                      placeholder="wpm"
+                      placeholder="ppm"
                       class="input customPaceCaretSpeed"
                       tabindex="0"
                       min="0"
@@ -2238,7 +2216,7 @@
                       tabindex="0"
                       onclick="this.blur();"
                     >
-                      off
+                      desligado
                     </div>
                     <div
                       class="button"
@@ -2246,7 +2224,7 @@
                       tabindex="0"
                       onclick="this.blur();"
                     >
-                      average
+                      média
                     </div>
                     <div
                       class="button"
@@ -2254,31 +2232,31 @@
                       tabindex="0"
                       onclick="this.blur();"
                     >
-                      custom
+                      personalizado
                     </div>
                   </div>
                 </div>
               </div>
               <div class="section repeatedPace" section="">
-                <h1>repeated pace</h1>
+                <h1>ritmo repetido</h1>
                 <div class="text">
-                  When repeating a test, a pace caret will automatically be
-                  enabled for one test with the speed of your previous test. It
-                  does not override the pace caret if it's already enabled.
+                  Ao repetir um teste, um cursor de ritmo será automaticamente
+                  habilitado para um teste com a velocidade do seu teste anterior. Não
+                  substitui o cursor de ritmo se já estiver habilitado.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section paceCaretStyle" section="">
-                <h1>pace caret style</h1>
+                <h1>estilo do cursor de ritmo</h1>
                 <div class="text">
-                  Change the style of the pace caret during the test.
+                  Altera o estilo do cursor de ritmo durante o teste.
                 </div>
                 <div class="buttons">
                   <div
@@ -2287,7 +2265,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    off
+                    desligado
                   </div>
                   <div
                     class="button"
@@ -2331,14 +2309,14 @@
               class="sectionGroupTitle"
               group="appearance"
             >
-              appearance
+              aparência
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="settingsGroup appearance">
               <div class="section timerStyle" section="">
-                <h1>timer/progress style</h1>
+                <h1>estilo do cronômetro/progresso</h1>
                 <div class="text">
-                  Change the style of the timer/progress during a timed test.
+                  Altera o estilo do cronômetro/progresso durante um teste cronometrado.
                 </div>
                 <div class="buttons">
                   <div
@@ -2347,7 +2325,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    bar
+                    barra
                   </div>
                   <div
                     class="button"
@@ -2355,7 +2333,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    text
+                    texto
                   </div>
                   <div
                     class="button"
@@ -2368,10 +2346,9 @@
                 </div>
               </div>
               <div class="section timerColor" section="">
-                <h1>timer/progress color</h1>
+                <h1>cor do cronômetro/progresso</h1>
                 <div class="text">
-                  Change the color of the timer/progress number/bar and live wpm
-                  number.
+                  Altera a cor do número/barra do cronômetro/progresso e número do ppm ao vivo.
                 </div>
                 <div class="buttons">
                   <div
@@ -2380,7 +2357,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    black
+                    preto
                   </div>
                   <div
                     class="button"
@@ -2396,7 +2373,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    text
+                    texto
                   </div>
                   <div
                     class="button"
@@ -2404,15 +2381,14 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    main
+                    principal
                   </div>
                 </div>
               </div>
               <div class="section timerOpacity" section="">
-                <h1>timer/progress opacity</h1>
+                <h1>opacidade do cronômetro/progresso</h1>
                 <div class="text">
-                  Change the opacity of the timer/progress number/bar and live
-                  wpm number.
+                  Altera a opacidade do número/barra do cronômetro/progresso e número do ppm ao vivo.
                 </div>
                 <div class="buttons">
                   <div
@@ -2450,9 +2426,9 @@
                 </div>
               </div>
               <div class="section highlightMode" section="">
-                <h1>highlight mode</h1>
+                <h1>modo destaque</h1>
                 <div class="text">
-                  Change what is highlighted during the test.
+                  Altera o que é destacado durante o teste.
                 </div>
                 <div class="buttons">
                   <div
@@ -2461,7 +2437,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    off
+                    desligado
                   </div>
                   <div
                     class="button"
@@ -2469,7 +2445,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    letter
+                    letra
                   </div>
                   <div
                     class="button"
@@ -2477,89 +2453,88 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    word
+                    palavra
                   </div>
                 </div>
               </div>
               <div class="section smoothLineScroll">
-                <h1>smooth line scroll</h1>
+                <h1>rolagem suave de linha</h1>
                 <div class="text">
-                  When enabled, the line transition will be animated.
+                  Quando habilitado, a transição de linha será animada.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section showAllLines">
-                <h1>show all lines</h1>
+                <h1>mostrar todas as linhas</h1>
                 <div class="text">
-                  When enabled, the website will show all lines for word, custom
-                  and quote mode tests - otherwise the lines will be limited to
-                  3, and will automatically scroll. Using this could cause the
-                  timer text and live wpm to not be visible.
+                  Quando habilitado, o site mostrará todas as linhas para testes nos modos palavra, personalizado
+                  e citação - caso contrário as linhas serão limitadas a
+                  3, e rolarão automaticamente. Usar isso pode fazer com que
+                  o texto do cronômetro e ppm ao vivo não fiquem visíveis.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section alwaysShowDecimalPlaces">
-                <h1>always show decimal places</h1>
+                <h1>sempre mostrar casas decimais</h1>
                 <div class="text">
-                  Always shows decimal places for values on the result page,
-                  without the need to hover over the stats.
+                  Sempre mostra casas decimais para valores na página de resultado,
+                  sem a necessidade de passar o mouse sobre as estatísticas.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section alwaysShowCPM">
-                <h1>always show cpm</h1>
+                <h1>sempre mostrar cpm</h1>
                 <div class="text">
-                  Always shows characters per minute calculation instead of the
-                  default words per minute calculation.
+                  Sempre mostra cálculo de caracteres por minuto ao invés do
+                  cálculo padrão de palavras por minuto.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section startGraphsAtZero">
-                <h1>start graphs at zero</h1>
+                <h1>iniciar gráficos no zero</h1>
                 <div class="text">
-                  Force graph axis to always start at zero, no matter what the
-                  data is. Turning this off may exaggerate the value changes.
+                  Força o eixo do gráfico a sempre começar no zero, não importa quais sejam os dados. Desligar isso pode exagerar as mudanças de valor.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section fontSize">
-                <h1>font size</h1>
-                <div class="text">Change the font size of the test words.</div>
+                <h1>tamanho da fonte</h1>
+                <div class="text">Altera o tamanho da fonte das palavras do teste.</div>
                 <div class="buttons">
                   <div
                     class="button"
@@ -2612,13 +2587,13 @@
                 </div>
               </div>
               <div class="section fontFamily fullWidth">
-                <h1>font family</h1>
+                <h1>família da fonte</h1>
                 <!-- <div class="text">Change the font family for the site</div> -->
                 <div class="buttons"></div>
               </div>
               <div class="section pageWidth">
-                <h1>page width</h1>
-                <div class="text">Control the width of the content.</div>
+                <h1>largura da página</h1>
+                <div class="text">Controla a largura do conteúdo.</div>
                 <div class="buttons">
                   <div
                     class="button"
@@ -2658,15 +2633,15 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    Max
+                    Máx
                   </div>
                 </div>
               </div>
               <div class="section keymapMode">
-                <h1>keymap</h1>
+                <h1>mapa de teclas</h1>
                 <div class="text">
-                  Displays your current layout while taking a test. React shows
-                  what you pressed and Next shows what you need to press next.
+                  Exibe seu layout atual enquanto faz um teste. React mostra
+                  o que você pressionou e Next mostra o que você precisa pressionar em seguida.
                 </div>
                 <div class="buttons">
                   <div
@@ -2675,7 +2650,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    off
+                    desligado
                   </div>
                   <div
                     class="button"
@@ -2683,7 +2658,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    static
+                    estático
                   </div>
                   <div
                     class="button"
@@ -2699,12 +2674,12 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    next
+                    próximo
                   </div>
                 </div>
               </div>
               <div class="section keymapStyle fullWidth">
-                <h1>keymap style</h1>
+                <h1>estilo do mapa de teclas</h1>
                 <!-- <div class="text">Displays the keymap in a different style.</div> -->
                 <div class="buttons">
                   <div
@@ -2713,7 +2688,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    staggered
+                    escalonado
                   </div>
                   <div
                     class="button"
@@ -2721,7 +2696,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    matrix
+                    matriz
                   </div>
                   <div
                     class="button"
@@ -2729,7 +2704,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    split
+                    dividido
                   </div>
                   <div
                     class="button"
@@ -2737,12 +2712,12 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    split matrix
+                    matriz dividida
                   </div>
                 </div>
               </div>
               <div class="section keymapLegendStyle fullWidth">
-                <h1>keymap legend style</h1>
+                <h1>estilo da legenda do mapa de teclas</h1>
                 <div class="buttons">
                   <div
                     class="button"
@@ -2750,7 +2725,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    lowercase
+                    minúsculas
                   </div>
                   <div
                     class="button"
@@ -2758,7 +2733,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    uppercase
+                    maiúsculas
                   </div>
                   <div
                     class="button"
@@ -2766,64 +2741,64 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    blank
+                    em branco
                   </div>
                 </div>
               </div>
               <div class="section keymapLayout fullWidth">
-                <h1>keymap layout</h1>
+                <h1>layout do mapa de teclas</h1>
                 <div class="buttons"></div>
               </div>
               <div class="sectionSpacer"></div>
             </div>
             <div id="group_theme" class="sectionGroupTitle" group="theme">
-              theme
+              tema
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="settingsGroup theme">
               <div class="section flipTestColors">
-                <h1>flip test colors</h1>
+                <h1>inverter cores do teste</h1>
                 <div class="text">
-                  By default, typed text is brighter than the future text. When
-                  enabled, the colors will be flipped and the future text will
-                  be brighter than the already typed text.
+                  Por padrão, o texto digitado é mais brilhante que o texto futuro. Quando
+                  habilitado, as cores serão invertidas e o texto futuro
+                  será mais brilhante que o texto já digitado.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section colorfulMode">
-                <h1>colorful mode</h1>
+                <h1>modo colorido</h1>
                 <div class="text">
-                  When enabled, the test words will use the main color, instead
-                  of the text color, making the website more colorful.
+                  Quando habilitado, as palavras do teste usarão a cor principal, ao invés
+                  da cor do texto, deixando o site mais colorido.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    off
+                    desligado
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    on
+                    ligado
                   </div>
                 </div>
               </div>
               <div class="section customBackgroundSize">
-                <h1>custom background</h1>
+                <h1>fundo personalizado</h1>
                 <div class="text">
-                  Set an image url to be a custom background image. Cover fits
-                  the image to cover the screen. Contain fits the image to be
-                  fully visible. Max fits the image corner to corner.
+                  Defina uma URL de imagem para ser uma imagem de fundo personalizada. Cover ajusta
+                  a imagem para cobrir a tela. Contain ajusta a imagem para ficar
+                  totalmente visível. Max ajusta a imagem de canto a canto.
                 </div>
                 <div>
                   <div class="inputAndSave">
                     <input
                       type="text"
-                      placeholder="image url"
+                      placeholder="url da imagem"
                       class="input"
                       tabindex="0"
                       onClick="this.select();"
@@ -2843,7 +2818,7 @@
                       tabindex="0"
                       onclick="this.blur();"
                     >
-                      cover
+                      cobrir
                     </div>
                     <div
                       class="button"
@@ -2851,7 +2826,7 @@
                       tabindex="0"
                       onclick="this.blur();"
                     >
-                      contain
+                      conter
                     </div>
                     <div
                       class="button"
@@ -2859,53 +2834,53 @@
                       tabindex="0"
                       onclick="this.blur();"
                     >
-                      max
+                      máx
                     </div>
                   </div>
                 </div>
               </div>
               <div class="section customBackgroundFilter fullWidth">
-                <h1>custom background filter</h1>
+                <h1>filtro de fundo personalizado</h1>
                 <div class="text">
-                  Apply various effects to the custom background.
+                  Aplica vários efeitos ao fundo personalizado.
                 </div>
                 <div class="groups">
                   <div class="group blur">
-                    <div class="title">blur</div>
+                    <div class="title">desfoque</div>
                     <div class="value"></div>
                     <input type="range" min="0" max="5" value="0" step="0.1" />
                   </div>
                   <div class="group brightness">
-                    <div class="title">brightness</div>
+                    <div class="title">brilho</div>
                     <div class="value"></div>
                     <input type="range" min="0" max="2" value="1" step="0.1" />
                   </div>
                   <div class="group saturate">
-                    <div class="title">saturate</div>
+                    <div class="title">saturação</div>
                     <div class="value"></div>
                     <input type="range" min="0" max="2" value="1" step="0.1" />
                   </div>
                   <div class="group opacity">
-                    <div class="title">opacity</div>
+                    <div class="title">opacidade</div>
                     <div class="value"></div>
                     <input type="range" min="0" max="1" value="1" step="0.1" />
                   </div>
                   <div class="saveContainer">
                     <div class="save button" style="grid-column: 3">
                       <!-- <i class="fas fa-save fa-fw"></i> -->
-                      save
+                      salvar
                     </div>
                   </div>
                 </div>
               </div>
               <div class="section randomTheme fullWidth">
-                <h1>randomize theme</h1>
+                <h1>tema aleatório</h1>
                 <div class="text">
-                  After completing a test, the theme will be set to a random
-                  one. The random themes are not saved to your config. If set to
-                  'fav' only favourite themes will be randomized. If set to
-                  'light' or 'dark', only presets with light or dark background
-                  colors will be randomized, respectively.
+                  Após completar um teste, o tema será definido para um
+                  aleatório. Os temas aleatórios não são salvos na sua configuração. Se definido para
+                  'fav' apenas temas favoritos serão aleatorizados. Se definido para
+                  'claro' ou 'escuro', apenas presets com cores de fundo claras ou escuras
+                  serão aleatorizados, respectivamente.
                 </div>
                 <div class="buttons">
                   <div
@@ -2914,7 +2889,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    off
+                    desligado
                   </div>
                   <div
                     class="button"
@@ -2922,7 +2897,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    on
+                    ligado
                   </div>
                   <div
                     class="button"
@@ -2930,7 +2905,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    favorite
+                    favorito
                   </div>
                   <div
                     class="button"
@@ -2938,7 +2913,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    light
+                    claro
                   </div>
                   <div
                     class="button"
@@ -2946,12 +2921,12 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    dark
+                    escuro
                   </div>
                 </div>
               </div>
               <div class="section themes fullWidth">
-                <h1>theme</h1>
+                <h1>tema</h1>
                 <div class="tabs">
                   <div
                     class="button"
@@ -2967,7 +2942,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    custom
+                    personalizado
                   </div>
                 </div>
                 <!-- <div class='tabs'>
@@ -2979,17 +2954,17 @@
                     tabContent="custom"
                     class="tabContent section customTheme hidden"
                   >
-                    <label class="colorText">background</label>
+                    <label class="colorText">fundo</label>
                     <span class="colorPicker">
                       <label for="--bg-color">#000000</label>
                       <input type="color" value="#000000" id="--bg-color" />
                     </span>
-                    <label class="colorText">main</label>
+                    <label class="colorText">principal</label>
                     <span class="colorPicker">
                       <label for="--main-color">#000000</label>
                       <input type="color" value="#000000" id="--main-color" />
                     </span>
-                    <label class="colorText">caret</label>
+                    <label class="colorText">cursor</label>
                     <span class="colorPicker">
                       <label for="--caret-color">#000000</label>
                       <input type="color" value="#000000" id="--caret-color" />
@@ -2999,7 +2974,7 @@
                       <label for="--sub-color">#000000</label>
                       <input type="color" value="#000000" id="--sub-color" />
                     </span>
-                    <label class="colorText">text</label>
+                    <label class="colorText">texto</label>
                     <span class="colorPicker">
                       <label for="--text-color">#000000</label>
                       <input type="color" value="#000000" id="--text-color" />
@@ -3007,12 +2982,12 @@
 
                     <span class="spacer"></span>
 
-                    <label class="colorText">error</label>
+                    <label class="colorText">erro</label>
                     <span class="colorPicker">
                       <label for="--error-color">#000000</label>
                       <input type="color" value="#000000" id="--error-color" />
                     </span>
-                    <label class="colorText">extra error</label>
+                    <label class="colorText">erro extra</label>
                     <span class="colorPicker">
                       <label for="--error-extra-color">#000000</label>
                       <input
@@ -3022,9 +2997,9 @@
                       />
                     </span>
 
-                    <p>colorful mode</p>
+                    <p>modo colorido</p>
 
-                    <label class="colorText">error</label>
+                    <label class="colorText">erro</label>
                     <span class="colorPicker">
                       <!-- Change variable names here -->
                       <label for="--colorful-error-color">#000000</label>
@@ -3034,7 +3009,7 @@
                         id="--colorful-error-color"
                       />
                     </span>
-                    <label class="colorText">extra error</label>
+                    <label class="colorText">erro extra</label>
                     <span class="colorPicker">
                       <!-- Change variable names here -->
                       <label for="--colorful-error-extra-color">#000000</label>
@@ -3057,11 +3032,11 @@
                       id="loadCustomColorsFromPreset"
                       style="grid-column: 1/3"
                     >
-                      load from preset
+                      carregar do preset
                     </div>
 
-                    <div class="button" id="shareCustomThemeButton">share</div>
-                    <div class="button saveCustomThemeButton">save</div>
+                    <div class="button" id="shareCustomThemeButton">compartilhar</div>
+                    <div class="button saveCustomThemeButton">salvar</div>
                     <!-- </div> -->
                   </div>
                   <div tabContent="preset" class="tabContent">
@@ -3078,93 +3053,93 @@
               class="sectionGroupTitle"
               group="hideElements"
             >
-              hide elements
+              ocultar elementos
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="settingsGroup hideElements">
               <div class="section showLiveWpm">
-                <h1>live wpm</h1>
+                <h1>ppm ao vivo</h1>
                 <div class="text">
-                  Displays a live WPM speed during the test. Updates once every
-                  second.
+                  Exibe velocidade de PPM ao vivo durante o teste. Atualiza a cada
+                  segundo.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    hide
+                    ocultar
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    show
+                    mostrar
                   </div>
                 </div>
               </div>
               <div class="section showLiveAcc">
-                <h1>live accuracy</h1>
-                <div class="text">Displays live accuracy during the test.</div>
+                <h1>precisão ao vivo</h1>
+                <div class="text">Exibe precisão ao vivo durante o teste.</div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    hide
+                    ocultar
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    show
+                    mostrar
                   </div>
                 </div>
               </div>
               <div class="section showLiveBurst">
-                <h1>live burst</h1>
+                <h1>rajada ao vivo</h1>
                 <div class="text">
-                  Displays live burst during the test of the last word you
-                  typed.
+                  Exibe rajada ao vivo durante o teste da última palavra que você
+                  digitou.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    hide
+                    ocultar
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    show
+                    mostrar
                   </div>
                 </div>
               </div>
               <div class="section showTimerProgress">
-                <h1>timer/progress</h1>
+                <h1>cronômetro/progresso</h1>
                 <div class="text">
-                  Displays a live timer for timed tests and progress for
-                  words/custom tests.
+                  Exibe um cronômetro ao vivo para testes cronometrados e progresso para
+                  testes de palavras/personalizados.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    hide
+                    ocultar
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    show
+                    mostrar
                   </div>
                 </div>
               </div>
               <div class="section showKeyTips">
-                <h1>key tips</h1>
+                <h1>dicas de teclas</h1>
                 <div class="text">
-                  Shows the keybind tips at the bottom of the page.
+                  Mostra as dicas de atalhos de teclado na parte inferior da página.
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    hide
+                    ocultar
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    show
+                    mostrar
                   </div>
                 </div>
               </div>
               <div class="section showOutOfFocusWarning">
-                <h1>out of focus warning</h1>
+                <h1>aviso fora de foco</h1>
                 <div class="text">
-                  Shows an out of focus reminder after 1 second of being 'out of
-                  focus' (not being able to type).
+                  Mostra um lembrete de fora de foco após 1 segundo de estar 'fora de
+                  foco' (não conseguir digitar).
                 </div>
                 <div class="buttons">
                   <div class="button off" tabindex="0" onclick="this.blur();">
-                    hide
+                    ocultar
                   </div>
                   <div class="button on" tabindex="0" onclick="this.blur();">
-                    show
+                    mostrar
                   </div>
                 </div>
               </div>
@@ -3176,13 +3151,13 @@
               class="sectionGroupTitle"
               group="dangerZone"
             >
-              danger zone
+              zona de perigo
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="settingsGroup dangerZone">
               <div class="section importexportSettings">
-                <h1>import/export settings</h1>
-                <div class="text">Import or export the settings as JSON.</div>
+                <h1>importar/exportar configurações</h1>
+                <div class="text">Importa ou exporta as configurações como JSON.</div>
                 <div class="buttons">
                   <div
                     class="button off"
@@ -3190,7 +3165,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    import
+                    importar
                   </div>
                   <div
                     class="button off"
@@ -3198,15 +3173,15 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    export
+                    exportar
                   </div>
                 </div>
               </div>
               <div class="section resetSettings">
-                <h1>reset settings</h1>
+                <h1>redefinir configurações</h1>
                 <div class="text">
-                  Resets settings to the default (but doesn't touch your tags).
-                  Warning: you can't undo this action!
+                  Redefine as configurações para o padrão (mas não toca suas tags).
+                  Aviso: você não pode desfazer esta ação!
                 </div>
                 <div class="buttons">
                   <div
@@ -3215,7 +3190,7 @@
                     tabindex="0"
                     onclick="this.blur();"
                   >
-                    reset
+                    redefinir
                   </div>
                 </div>
               </div>
@@ -3229,24 +3204,24 @@
           </div>
           <div class="keyTips">
             <key>tab</key>
-            and
+            e
             <key>enter</key>
-            - Restart Test
+            - Reiniciar Teste
             <br />
             <key>ctrl/cmd</key>
             +
             <key>shift</key>
             +
             <key>p</key>
-            or
+            ou
             <key>esc</key>
-            - Command Line
+            - Linha de Comando
           </div>
           <div class="leftright">
             <div class="left">
               <a href="mailto:jack@monkeytype.com" target="_blank">
                 <i class="fas fa-fw fa-envelope"></i>
-                <div class="text">Support</div>
+                <div class="text">Suporte</div>
               </a>
               <a href="https://github.com/Miodec/monkeytype" target="_blank">
                 <i class="fas fa-fw fa-code"></i>
@@ -3266,33 +3241,33 @@
               </a>
               <a href="terms-of-service.html" target="_blank">
                 <i class="fas fa-fw fa-file-contract"></i>
-                <div class="text">Terms</div>
+                <div class="text">Termos</div>
               </a>
               <a href="security-policy.html" target="_blank">
                 <i class="fas fa-fw fa-shield-alt"></i>
-                <div class="text">Security</div>
+                <div class="text">Segurança</div>
               </a>
               <a href="privacy-policy.html" target="_blank">
                 <i class="fas fa-fw fa-lock"></i>
-                <div class="text">Privacy</div>
+                <div class="text">Privacidade</div>
               </a>
               <a id="supportMeButton">
                 <i class="fas fa-fw fa-donate"></i>
-                <div class="text">Donate</div>
+                <div class="text">Doar</div>
               </a>
             </div>
             <div class="right">
               <a
                 class="current-theme"
-                aria-label="Shift-click to toggle custom theme"
+                aria-label="Shift-clique para alternar tema personalizado"
                 data-balloon-pos="left"
               >
                 <i class="fas fa-fw fa-palette"></i>
-                <div class="text">serika dark</div>
+                <div class="text">serika escuro</div>
               </a>
               <a class="version">
                 <i class="fas fa-fw fa-code-branch"></i>
-                <div class="text">version</div>
+                <div class="text">versão</div>
               </a>
               <!-- <div>
                 <i class="fas fa-file"></i>
